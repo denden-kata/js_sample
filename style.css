@@ -3,7 +3,10 @@
 
 /* googlefont の URL そのまま貼りつけた */
 /* 合っているんだろうか？ */
-@import url(https://fonts.google.com/specimen/Kumar+One);
+/* @import url(https://fonts.google.com/specimen/Kumar+One); */
+
+/* 例にならった場合 */
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
 
 
 body{
