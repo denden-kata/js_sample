@@ -4,7 +4,7 @@ function clock() {
     //曜日を表す各文字の配列
     var weeks = new Array("Sun","Mon","Thu","Wed","Thr","Fri","Sat");
     //現在日時を表すインスタンスを取得
-    var now = new Data();
+    var now = new Date();
     //年
     var y = now.getFullYear();
     //月　0～11 で取得されるので実際の月は +1 したものとなる
