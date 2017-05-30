@@ -1,8 +1,8 @@
 /* Google Webフォントを利用設定するCSSをインポート */
 /* https://fonts.google.com/ */
 
-/* googlefont の URL そのまま貼りつけた */
-/* 合っているんだろうか？ */
+/* googlefont の URL そのまま */
+/* 違うフォントが反映されてる？ */
 @import url(https://fonts.google.com/specimen/Kumar+One);
 
 /* サンプルコードにならった場合　文字が表示されない原因はこれではなさそう */
@@ -13,13 +13,13 @@ body{
     /* 文字色を白に */
     color: white;
     /* 背景を黒に */
-    background-color: black
+    background-color: black;
 }
 
 
 /* id="clock_flame" のdiv要素 */
 /* html内の時計枠に記述されているやつ */
-div#clock_flame{
+div#clock_frame{
     /* 横幅を親要素であるbodyの100%（同じ幅）とする */
     width: 100%;
 }
@@ -40,6 +40,9 @@ span{
 
     /* フォントの種類を一番上で指定したGoogle webフォントに設定する */
     font-family: 'Kumar One', cursive;
+
+    /* サンプルコードにならった場合 */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
 }
 
 

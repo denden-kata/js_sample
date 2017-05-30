@@ -12,7 +12,6 @@ function clock() {
     //日
     var d = now.getDate();
     //曜日 0～6 で日曜始まりで取得されるので weeks 配列のインデックスとして指定する
-    //この [] は配列？　あとで確認
     var w = weeks[now.getDay()];
     //時
     var h = now.getHours();
@@ -34,7 +33,7 @@ function clock() {
     document.getElementById("clock_time").innerHTML = h + ":" + mi + ":" + s;
 
     // HTML: <div id = "clock_flame"> の内部要素のフォントサイズをウインドウサイズの10分の1ピクセルに設定
-    document.getElementById("clock_flame").style.fontSize = window.innerWidth / 10 + "px";
+    document.getElementById("clock_frame").style.fontSize = window.innerWidth / 10 + "px";
 
 }
 
