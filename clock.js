@@ -2,7 +2,7 @@
 
 function clock() {
     //曜日を表す各文字の配列
-    var weeks = new Array(arguments);
+    var weeks = new Array("Sun","Mon","Thu","Wed","Thr","Fri","Sat");
     //現在日時を表すインスタンスを取得
     var now = new Data();
     //年
@@ -28,7 +28,7 @@ function clock() {
     if( s < 10 ) s = "0" + s;
 
     // HTML: <span id = "clock_data"> (ここの日付文字列を書き換え) </span>
-    document.getElementById("clock_date").innerHTML = y + "/" + mo + "/" + d + "/" + "( + w + )";
+    document.getElementById("clock_date").innerHTML = y + "/" + mo + "/" + d + "/" + "(" + w + ")";
 
     // HTML: <span id = "clock_time"> (ここの日付文字列を書き換え) </span>
     document.getElementById("clock_time").innerHTML = h + ":" + mi + ":" + s;
